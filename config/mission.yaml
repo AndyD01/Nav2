@@ -1,0 +1,54 @@
+missions:
+  go_home:
+    - dock_id: home
+      dwell_time: 0
+
+  go_charging:
+    - dock_id: nouzen_dock_station
+      dwell_time: 0
+
+  go_input_a:
+    - dock_id: input_a
+      dwell_time: 0
+
+  go_input_b:
+    - dock_id: input_b
+      dwell_time: 0
+
+  go_output_a:
+    - dock_id: output_a
+      dwell_time: 0
+
+  go_output_b:
+    - dock_id: output_b
+      dwell_time: 0
+
+  test_full_ap:
+    - dock_id: input_a
+      dwell_time: 5
+    - dock_id: output_a
+      dwell_time: 5
+    - dock_id: input_b
+      dwell_time: 5
+    - dock_id: output_b
+      dwell_time: 5
+
+  go_SCSS1:
+    - dock_id: SCSS1
+      dwell_time: 0
+
+  go_SCSS2:
+    - dock_id: SCSS2
+      dwell_time: 0
+
+  test_S1_S2:
+    - dock_id: SCSS1
+      dwell_time: 5
+    - dock_id: SCSS2
+      dwell_time: 5
+
+  test_S2_S1:
+    - dock_id: SCSS2
+      dwell_time: 5
+    - dock_id: SCSS1
+      dwell_time: 5

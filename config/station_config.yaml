@@ -1,0 +1,83 @@
+robot:
+  max_payload_kg: 2.0
+  low_battery_threshold_percent: 20
+  home_dock_id: 'home'
+  home_dock_type: 'home'
+  start_docked: true
+  auto_dock_home: true
+
+dispatcher:
+  data_gathering_sec: 5
+  max_consecutive_failures: 3
+  max_retries: 2              
+  mission_timeout_sec: 600    
+
+undock:
+  backup_enabled: false
+  backup_distance_m: 0.15
+  backup_speed_ms: 0.05
+  tag_detection_wait_sec: 2.0
+
+retry:
+  max_simple_retries: 2
+  max_reorient_retries: 1
+  max_backup_retries: 1
+  retreat_distance_m: 0.30
+  full_retreat_distance_m: 0.60
+  tag_detection_wait_sec: 3.0
+
+material_types:
+  Shaft Collars:
+    weight_kg: 0.08
+    items_per_batch: 1
+    production_interval_sec: 10
+
+  Bearing Housing:
+    weight_kg: 0.20
+    items_per_batch: 1
+    production_interval_sec: 15
+
+stations:
+  input_a:
+    type: 'input'
+    dock_id: 'input_a'
+    tag_id: 2
+    approach_yaw: 0.0
+    material_type: 'Shaft Collars'
+    min_box_capacity_kg: 0.50
+    max_box_capacity_kg: 1.00
+    load_time_sec: 5
+    restock_delay_sec: 20
+    priority: 1
+    compatible_outputs: ['output_a', 'output_b']
+
+  input_b:
+    type: 'input'
+    dock_id: 'input_b'
+    tag_id: 3
+    approach_yaw: 0.0
+    material_type: 'Bearing Housing'
+    min_box_capacity_kg: 0.80
+    max_box_capacity_kg: 1.50
+    load_time_sec: 8
+    restock_delay_sec: 30
+    priority: 1
+    compatible_outputs: ['output_a', 'output_b']
+
+  output_a:
+    type: 'output'
+    dock_id: 'output_a'
+    tag_id: 4
+    approach_yaw: 3.14159
+    accepted_materials: ['Shaft Collars', 'Bearing Housing']
+    unload_time_sec: 6
+    clear_time_sec: 15
+
+  output_b:
+    type: 'output'
+    dock_id: 'output_b'
+    tag_id: 5
+    approach_yaw: 3.14159
+    accepted_materials: ['Shaft Collars', 'Bearing Housing']
+    unload_time_sec: 5
+    clear_time_sec: 10

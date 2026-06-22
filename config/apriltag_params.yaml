@@ -1,0 +1,13 @@
+/**:
+  ros__parameters:
+    family: '36h11'
+    size: 0.150
+    tag_ids: [0, 1, 2, 3, 4, 5, 6, 7]
+    tag_sizes: [0.150, 0.150, 0.150, 0.150, 0.150, 0.150, 0.150, 0.150]
+    max_hamming: 0
+    decimate: 2.0
+    blur: 0.0
+    refine_edges: true
+    threads: 1
+    publish_tf: true
+    debug: false

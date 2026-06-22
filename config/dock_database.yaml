@@ -1,0 +1,55 @@
+docks:
+  nouzen_dock_station:
+    type: 'charging_dock'
+    frame: 'map'
+    pose: [8.131, 3.65, 0.0]
+    approach_yaw: 0.0
+
+  home:
+    type: 'home'
+    frame: 'map'
+    pose: [5.95, -1.203, -1.5708]
+    approach_yaw: -1.5708
+    approach_point: [6.321, 0.445, -1.5708]
+
+  input_a:
+    type: 'input_a'
+    frame: 'map'
+    pose: [0.8, 5.030, 3.14159]
+    approach_yaw: 3.14159
+    approach_point: [2.140, 2.879, 3.14159]
+
+  input_b:
+    type: 'input_b'
+    frame: 'map'
+    pose: [0.8, 0.05, 3.14159]
+    approach_yaw: 3.14159
+    approach_point: [2.196, 1.504, 3.14159]
+
+  output_a:
+    type: 'output_a'
+    frame: 'map'
+    pose: [8.115, 1.525, 0.0]
+    approach_yaw: 0.0
+    approach_point: [6.655, 3.334, -1.5708]
+
+  output_b:
+    type: 'output_b'
+    frame: 'map'
+    pose: [7.972, 4.475, 0.0]
+    approach_yaw: 0.0
+    approach_point: [6.655, 3.334, 1.5708]
+
+  SCSS1:
+    type: 'SCSS1'
+    frame: 'map'
+    pose: [5.592, -0.406, 0.0]
+    approach_yaw: 0.0
+    approach_point: [4.621, -0.406, 0.0]
+
+  SCSS2:
+    type: 'SCSS2'
+    frame: 'map'
+    pose: [5.592, -0.406, 0.0]
+    approach_yaw: 0.0
+    approach_point: [4.621, -0.406, 0.0]
